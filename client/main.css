@@ -1,0 +1,265 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  font-family: sans-serif;
+  /* background-color: #315481;
+  background-image: linear-gradient(to bottom, #315481, #918e82 100%); */
+  background-attachment: fixed;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  padding: 0;
+  margin: 0;
+
+  font-size: 14px;
+}
+
+button {
+  font-weight: bold;
+  font-size: 1em;
+  border: none;
+  color: white;
+  /* box-shadow: 0 3px 3px rgba(34, 25, 25, 0.4); */
+  padding: 5px;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow: auto;
+  background-color: white;
+}
+
+.main::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  background: inherit;
+}
+
+/* Header */
+header {
+  background-color: #eee;
+  color: black;
+  padding: 20px 15px 15px 15px;
+  position: relative;
+}
+
+.app-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app-bar h1 {
+  font-size: 1.5em;
+  margin: 0;
+  margin-right: 1em;
+}
+
+.app-header {
+  display: flex;
+  flex-grow: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 10px;
+}
+
+.logoImg {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+
+.user {
+  display: flex;
+  margin-left: auto;
+  align-self: center;
+  margin-right: 20px;
+  align-items: center;
+}
+
+.userImg {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.task-form {
+  display: flex;
+  margin: 16px;
+}
+
+.task-form > input {
+  flex-grow: 1;
+  box-sizing: border-box;
+  padding: 10px 15px 10px 15px;
+  width: 100%;
+  font-size: 1em;
+  margin-right: 20px;
+  border: none;
+  border-bottom: 1px solid #aaa;
+  margin-left: 20px;
+}
+
+.task-form > input:focus {
+  outline: none;
+  border-bottom: 3px solid #4285F4;
+}
+
+.checkbox-round {
+  width: 2em;
+  height: 2em;
+  background-color: white;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 1px solid #ddd;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+  outline: 0;
+}
+
+.checkbox-round:checked {
+  background-color: #4285F4;
+}
+
+.task-form > button {
+  border-radius: 50%;
+  width: 3em;
+  height: 3em;
+  background-color: #4285F4;
+  font-size: 20px;
+}
+
+.tasks {
+  list-style-type: none;
+  padding-inline-start: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-top: 20px;
+}
+
+.task {
+  display: flex;
+  padding: 16px;
+  border-bottom: #eee solid 1px;
+  font-size: 16px;
+  align-items: center;
+}
+
+.task > span {
+  flex-grow: 1;
+  margin-left: 15px;
+}
+
+.task > button {
+  justify-self: flex-end;
+  border: none;
+  color: lightgray;
+  background-color: transparent;
+  font-size: 20px;
+}
+
+.newTask {
+  border: none;
+  font-size: 16px;
+  width: 100%;
+  flex-grow: 1;
+  margin-left: 15px;
+}
+
+.newTask:focus {
+  outline: none;
+}
+
+.filterBtn {
+  color: black;
+  margin-bottom: 5px;
+  background-color: transparent;
+  font-weight: bold;
+  align-self: flex-start;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+/* Login */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form > div {
+  margin: 20px;
+}
+
+.login-form > div > label {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.login-form > div  > input {
+  flex-grow: 1;
+  box-sizing: border-box;
+  padding: 10px 6px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #aaa;
+  width: 100%;
+  font-size: 1em;
+  margin-right: 16px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.login-form > div > input:focus {
+  outline: 0;
+}
+
+.loginBtn {
+  background-color: #4285F4;
+  padding: 10px 20px 10px 20px;
+  margin-right: 10px;
+}
+
+.signUpBtn {
+  background-color: #eee;
+  padding: 10px 20px 10px 20px;
+  margin-right: 10px;
+  color: black;
+}
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+
+
